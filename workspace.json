@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "barselona": "apps/barselona",
+    "barselona-e2e": "apps/barselona-e2e"
+  }
+}
