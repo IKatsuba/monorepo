@@ -5,12 +5,12 @@
   "scripts": {
     "build": "nx run-many --target build --all --configuration production",
     "test": "nx run-many --target test --all",
-    "lint": "nx run-many --target lint --all",
     "e2e": "nx run-many --target e2e --all --configuration production",
+    "lint": "nx run-many --target lint --all",
     "build:affected": "nx affected:build --configuration production",
     "test:affected": "nx affected:test",
-    "lint:affected": "nx affected:lint",
-    "e2e:affected": "nx affected:e2e --configuration production"
+    "e2e:affected": "nx affected:e2e --configuration production",
+    "lint:affected": "nx affected:lint"
   },
   "private": true,
   "dependencies": {
