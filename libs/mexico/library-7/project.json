@@ -1,0 +1,43 @@
+{
+  "root": "libs/mexico/library-7",
+  "sourceRoot": "libs/mexico/library-7/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/mexico/library-7",
+        "tsConfig": "libs/mexico/library-7/tsconfig.lib.json",
+        "project": "libs/mexico/library-7/package.json",
+        "entryFile": "libs/mexico/library-7/src/index.ts",
+        "external": ["react/jsx-runtime"],
+        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "compiler": "babel",
+        "assets": [
+          {
+            "glob": "libs/mexico/library-7/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/mexico/library-7/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/mexico/library-7"],
+      "options": {
+        "jestConfig": "libs/mexico/library-7/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

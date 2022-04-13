@@ -14,7 +14,72 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@monorepo/barcelona-library-0": [
+        "libs/barcelona/library-0/src/index.ts"
+      ],
+      "@monorepo/barcelona-library-1": [
+        "libs/barcelona/library-1/src/index.ts"
+      ],
+      "@monorepo/barcelona-library-2": [
+        "libs/barcelona/library-2/src/index.ts"
+      ],
+      "@monorepo/barcelona-library-3": [
+        "libs/barcelona/library-3/src/index.ts"
+      ],
+      "@monorepo/barcelona-library-4": [
+        "libs/barcelona/library-4/src/index.ts"
+      ],
+      "@monorepo/barcelona-library-5": [
+        "libs/barcelona/library-5/src/index.ts"
+      ],
+      "@monorepo/barcelona-library-6": [
+        "libs/barcelona/library-6/src/index.ts"
+      ],
+      "@monorepo/barcelona-library-7": [
+        "libs/barcelona/library-7/src/index.ts"
+      ],
+      "@monorepo/cairo-library-0": ["libs/cairo/library-0/src/index.ts"],
+      "@monorepo/cairo-library-1": ["libs/cairo/library-1/src/index.ts"],
+      "@monorepo/cairo-library-2": ["libs/cairo/library-2/src/index.ts"],
+      "@monorepo/cairo-library-3": ["libs/cairo/library-3/src/index.ts"],
+      "@monorepo/cairo-library-4": ["libs/cairo/library-4/src/index.ts"],
+      "@monorepo/cairo-library-5": ["libs/cairo/library-5/src/index.ts"],
+      "@monorepo/cairo-library-6": ["libs/cairo/library-6/src/index.ts"],
+      "@monorepo/cairo-library-7": ["libs/cairo/library-7/src/index.ts"],
+      "@monorepo/delphi-library-0": ["libs/delphi/library-0/src/index.ts"],
+      "@monorepo/delphi-library-1": ["libs/delphi/library-1/src/index.ts"],
+      "@monorepo/delphi-library-2": ["libs/delphi/library-2/src/index.ts"],
+      "@monorepo/delphi-library-3": ["libs/delphi/library-3/src/index.ts"],
+      "@monorepo/delphi-library-4": ["libs/delphi/library-4/src/index.ts"],
+      "@monorepo/delphi-library-5": ["libs/delphi/library-5/src/index.ts"],
+      "@monorepo/delphi-library-6": ["libs/delphi/library-6/src/index.ts"],
+      "@monorepo/delphi-library-7": ["libs/delphi/library-7/src/index.ts"],
+      "@monorepo/mexico-library-0": ["libs/mexico/library-0/src/index.ts"],
+      "@monorepo/mexico-library-1": ["libs/mexico/library-1/src/index.ts"],
+      "@monorepo/mexico-library-2": ["libs/mexico/library-2/src/index.ts"],
+      "@monorepo/mexico-library-3": ["libs/mexico/library-3/src/index.ts"],
+      "@monorepo/mexico-library-4": ["libs/mexico/library-4/src/index.ts"],
+      "@monorepo/mexico-library-5": ["libs/mexico/library-5/src/index.ts"],
+      "@monorepo/mexico-library-6": ["libs/mexico/library-6/src/index.ts"],
+      "@monorepo/mexico-library-7": ["libs/mexico/library-7/src/index.ts"],
+      "@monorepo/shared-library-0": ["libs/shared/library-0/src/index.ts"],
+      "@monorepo/shared-library-1": ["libs/shared/library-1/src/index.ts"],
+      "@monorepo/shared-library-2": ["libs/shared/library-2/src/index.ts"],
+      "@monorepo/shared-library-3": ["libs/shared/library-3/src/index.ts"],
+      "@monorepo/shared-library-4": ["libs/shared/library-4/src/index.ts"],
+      "@monorepo/shared-library-5": ["libs/shared/library-5/src/index.ts"],
+      "@monorepo/shared-library-6": ["libs/shared/library-6/src/index.ts"],
+      "@monorepo/shared-library-7": ["libs/shared/library-7/src/index.ts"],
+      "@monorepo/tokyo-library-0": ["libs/tokyo/library-0/src/index.ts"],
+      "@monorepo/tokyo-library-1": ["libs/tokyo/library-1/src/index.ts"],
+      "@monorepo/tokyo-library-2": ["libs/tokyo/library-2/src/index.ts"],
+      "@monorepo/tokyo-library-3": ["libs/tokyo/library-3/src/index.ts"],
+      "@monorepo/tokyo-library-4": ["libs/tokyo/library-4/src/index.ts"],
+      "@monorepo/tokyo-library-5": ["libs/tokyo/library-5/src/index.ts"],
+      "@monorepo/tokyo-library-6": ["libs/tokyo/library-6/src/index.ts"],
+      "@monorepo/tokyo-library-7": ["libs/tokyo/library-7/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

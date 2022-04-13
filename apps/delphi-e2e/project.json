@@ -1,0 +1,28 @@
+{
+  "root": "apps/delphi-e2e",
+  "sourceRoot": "apps/delphi-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/delphi-e2e/cypress.json",
+        "devServerTarget": "delphi:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "delphi:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/delphi-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["delphi"]
+}

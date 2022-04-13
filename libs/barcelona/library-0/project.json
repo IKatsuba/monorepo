@@ -1,0 +1,43 @@
+{
+  "root": "libs/barcelona/library-0",
+  "sourceRoot": "libs/barcelona/library-0/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/barcelona/library-0",
+        "tsConfig": "libs/barcelona/library-0/tsconfig.lib.json",
+        "project": "libs/barcelona/library-0/package.json",
+        "entryFile": "libs/barcelona/library-0/src/index.ts",
+        "external": ["react/jsx-runtime"],
+        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "compiler": "babel",
+        "assets": [
+          {
+            "glob": "libs/barcelona/library-0/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/barcelona/library-0/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/barcelona/library-0"],
+      "options": {
+        "jestConfig": "libs/barcelona/library-0/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

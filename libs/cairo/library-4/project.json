@@ -1,0 +1,43 @@
+{
+  "root": "libs/cairo/library-4",
+  "sourceRoot": "libs/cairo/library-4/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/cairo/library-4",
+        "tsConfig": "libs/cairo/library-4/tsconfig.lib.json",
+        "project": "libs/cairo/library-4/package.json",
+        "entryFile": "libs/cairo/library-4/src/index.ts",
+        "external": ["react/jsx-runtime"],
+        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "compiler": "babel",
+        "assets": [
+          {
+            "glob": "libs/cairo/library-4/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/cairo/library-4/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/cairo/library-4"],
+      "options": {
+        "jestConfig": "libs/cairo/library-4/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

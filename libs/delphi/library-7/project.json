@@ -1,0 +1,43 @@
+{
+  "root": "libs/delphi/library-7",
+  "sourceRoot": "libs/delphi/library-7/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/delphi/library-7",
+        "tsConfig": "libs/delphi/library-7/tsconfig.lib.json",
+        "project": "libs/delphi/library-7/package.json",
+        "entryFile": "libs/delphi/library-7/src/index.ts",
+        "external": ["react/jsx-runtime"],
+        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "compiler": "babel",
+        "assets": [
+          {
+            "glob": "libs/delphi/library-7/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/delphi/library-7/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/delphi/library-7"],
+      "options": {
+        "jestConfig": "libs/delphi/library-7/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
