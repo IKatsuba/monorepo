@@ -14,8 +14,8 @@
   },
   "private": true,
   "dependencies": {
-    "core-js": "^3.6.5",
     "@nrwl/next": "13.10.1",
+    "core-js": "^3.6.5",
     "next": "12.1.2",
     "react": "18.0.0",
     "react-dom": "18.0.0",
@@ -24,8 +24,8 @@
     "tslib": "^2.0.0"
   },
   "devDependencies": {
-    "@nrwl/cli": "13.10.1",
     "@nrwl/cypress": "13.10.1",
+    "@nrwl/cli": "13.10.1",
     "@nrwl/devkit": "13.10.1",
     "@nrwl/eslint-plugin-nx": "13.10.1",
     "@nrwl/jest": "13.10.1",
