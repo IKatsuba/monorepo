@@ -1,0 +1,28 @@
+{
+  "root": "apps/barcelona-e2e",
+  "sourceRoot": "apps/barcelona-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/barcelona-e2e/cypress.json",
+        "devServerTarget": "barcelona:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "barcelona:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/barcelona-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["barcelona"]
+}

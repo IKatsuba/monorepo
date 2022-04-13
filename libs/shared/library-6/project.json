@@ -1,0 +1,43 @@
+{
+  "root": "libs/shared/library-6",
+  "sourceRoot": "libs/shared/library-6/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/shared/library-6",
+        "tsConfig": "libs/shared/library-6/tsconfig.lib.json",
+        "project": "libs/shared/library-6/package.json",
+        "entryFile": "libs/shared/library-6/src/index.ts",
+        "external": ["react/jsx-runtime"],
+        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "compiler": "babel",
+        "assets": [
+          {
+            "glob": "libs/shared/library-6/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/shared/library-6/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/library-6"],
+      "options": {
+        "jestConfig": "libs/shared/library-6/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

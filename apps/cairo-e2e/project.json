@@ -1,0 +1,28 @@
+{
+  "root": "apps/cairo-e2e",
+  "sourceRoot": "apps/cairo-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/cairo-e2e/cypress.json",
+        "devServerTarget": "cairo:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "cairo:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/cairo-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["cairo"]
+}

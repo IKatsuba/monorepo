@@ -3,9 +3,14 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nx serve",
-    "build": "nx build",
-    "test": "nx test"
+    "build": "nx run-many --target build --all --configuration production",
+    "test": "nx run-many --target test --all",
+    "lint": "nx run-many --target lint --all",
+    "e2e": "nx run-many --target e2e --all --configuration production",
+    "build:affected": "nx affected:build --configuration production",
+    "test:affected": "nx affected:test",
+    "lint:affected": "nx affected:lint",
+    "e2e:affected": "nx affected:e2e --configuration production"
   },
   "private": true,
   "dependencies": {
@@ -14,12 +19,14 @@
     "next": "12.1.2",
     "react": "18.0.0",
     "react-dom": "18.0.0",
+    "react-router-dom": "5.3.0",
     "regenerator-runtime": "0.13.7",
     "tslib": "^2.0.0"
   },
   "devDependencies": {
     "@nrwl/cli": "13.10.1",
     "@nrwl/cypress": "13.10.1",
+    "@nrwl/devkit": "13.10.1",
     "@nrwl/eslint-plugin-nx": "13.10.1",
     "@nrwl/jest": "13.10.1",
     "@nrwl/linter": "13.10.1",
@@ -32,6 +39,7 @@
     "@types/node": "16.11.7",
     "@types/react": "17.0.43",
     "@types/react-dom": "17.0.14",
+    "@types/react-router-dom": "5.3.3",
     "@typescript-eslint/eslint-plugin": "~5.18.0",
     "@typescript-eslint/parser": "~5.18.0",
     "babel-jest": "27.2.3",
@@ -48,6 +56,7 @@
     "nx": "13.10.1",
     "prettier": "^2.5.1",
     "react-test-renderer": "18.0.0",
+    "rxjs": "^7.5.5",
     "sass": "1.43.2",
     "ts-jest": "27.0.5",
     "typescript": "~4.6.2"
